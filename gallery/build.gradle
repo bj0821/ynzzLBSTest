@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
+android {
+
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            shrinkResources true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-fragment:24.2.1'
+//    compile 'com.google.android.exoplayer:exoplayer:r2.4.0'
+}
+
+//添加
+publish {
+    userOrg = 'chengzichen'//bintray.com用户名
+    groupId = 'com.dhc.krgallery'//jcenter上的路径
+    artifactId = 'gallerylib'//项目名称
+    publishVersion = '1.0.2'//版本号
+    desc = 'Oh hi, this is Crop , Video, Photos, from Telegram'//描述，不重要
+    website = 'https://github.com/chengzichen/KrGallery'//网站，不重要
+}
