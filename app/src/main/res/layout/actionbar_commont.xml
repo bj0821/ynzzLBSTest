@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_actionbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlelayout_height"
+    android:background="@color/new_blue"
+    android:paddingLeft="@dimen/margin_10"
+    android:paddingRight="@dimen/margin_10">
+
+    <ImageButton
+        android:id="@+id/common_actionbar_leftbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/back_select" />
+
+    <RelativeLayout
+        android:id="@+id/common_actionbar_rightlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/common_actionbar_rightbtn"
+            style="@style/white_16_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/common_actionbar_rightbtn_2"
+            style="@style/white_16_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@id/common_actionbar_rightbtn"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/common_actionbar_title"
+        style="@style/white_16_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+</RelativeLayout>

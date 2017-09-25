@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">YNZZ</string>
+    <string name="action_settings">注册</string>
+
+    <!--注册方式的标题-->
+    <string name="title_activity_register">注册</string>
+    <string name="register_basic_info_fragment_register_method_account">账户注册</string>
+    <string name="register_basic_info_fragment_register_method_mobile">手机注册</string>
+    <string name="register_basic_info_fragment_register_method_email">邮箱注册</string>
+
+    <string name="send_vertifh_code">发送验证码</string>
+    <!--注册新用户-->
+    <string name="register_basic_info_fragment_method_account_newaccount">新用户名</string>
+    <string name="mobile_number">手机号码</string>
+    <string name="security_code">验证码</string>
+    <string name="register_basic_info_fragment_method_mobile_send_security_code">发送验证码</string>
+    <string name="register_basic_info_fragment_method_email_address">邮箱</string>
+    <string name="password">密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="register_now">立即注册</string>
+    <!--填写用户详细信息-->
+    <string name="nickname">昵称</string>
+    <string name="register_detail_info_fragment_sex">性别</string>
+    <string name="register_detail_info_fragment_sex_men">男</string>
+    <string name="register_detail_info_fragment_sex_women">女</string>
+    <string name="register_detail_info_fragment_birthday">生日</string>
+    <string name="register_detail_info_fragment_submit">提交修改</string>
+
+
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="tab_menu_alert">相机</string>
+    <string name="tab_menu_profile">位置</string>
+    <string name="tab_menu_pay">导航</string>
+    <string name="tab_menu_setting">扫码</string>
+    <!--菜单选项 START*******************************************************************************-->
+
+    <string name="myinfo">我的信息</string>
+    <string name="myorders">我的位置</string>
+    <string name="mycars">我的汽车</string>
+    <string name="myregulations">我的相机</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="help_and_feedback">评价</string>
+    <string name="auto_update">检查更新</string>
+    <!--Titile-->
+
+    <string name="settings_head_user">用户</string>
+    <string name="settings_head_car">车辆</string>
+    <string name="settings_head_moregas">加油</string>
+    <string name="settings_head_regulation">违章</string>
+    <string name="settings_head_navigate">导航</string>
+    <string name="settings_head_music">音乐</string>
+
+    <string name="app_name_ver" translatable="false">ynzz 1.1</string>
+    <string name="about_text" tools:ignore="MissingTranslation"> 云南中智物联网科技有限公司
+    是一家致力于车联网的公司，本产品可以获取用户设备的GPS信息和调用设备相机进行拍照，以及将获取到的GPS信息
+    和照片信息上传到服务器。</string>
+</resources>

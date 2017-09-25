@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="register_detail_info_fragment_circleimageview_size">80dp</dimen>
+
+    <dimen name="fragment_login_imageview_size">100dp</dimen>
+
+    <dimen name="fragment_login_progressbar_size">60dp</dimen>
+
+    <dimen name="activity_home_drawer_layout_width">200dp</dimen>
+
+    <dimen name="activity_city_list_textview_list_tip">30.0dp</dimen>
+
+    <dimen name="button_text_size">18sp</dimen>
+
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_medium">4dp</dimen>
+
+
+    <dimen name="margin_2">2dip</dimen>
+    <dimen name="margin_5">5dip</dimen>
+    <dimen name="margin_7">7dip</dimen>
+    <dimen name="margin_10">10dip</dimen>
+    <dimen name="margin_15">15dip</dimen>
+    <dimen name="margin_25">25dip</dimen>
+    <dimen name="margin_120">120dip</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_17">17sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="twenty_dip">20dip</dimen>
+    <!-- activity -->
+    <dimen name="titlelayout_height">50dip</dimen>
+    <dimen name="split_line_h">0.5dip</dimen>
+    <dimen name="login_input_h">40dip</dimen>
+    <dimen name="input_h">35dip</dimen>
+
+</resources>

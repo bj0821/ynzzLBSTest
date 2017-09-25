@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_sensor"
+        android:orderInCategory="100"
+        android:title="传感器检测" />
+    <item
+        android:id="@+id/orientation_sensor"
+        android:orderInCategory="100"
+        android:title="方向传感器"/>
+    <item
+        android:id="@+id/ratingbar"
+        android:orderInCategory="100"
+        android:title="评价"/>
+    <item
+        android:id="@+id/wifi"
+        android:orderInCategory="100"
+        android:title="WIFI信息"/>
+</menu>

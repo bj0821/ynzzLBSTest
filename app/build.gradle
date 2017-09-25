@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.ynzz.lbstest"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions{
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        // as noted by @Vishnuvathsan you may also need to include
+        // variations on the file name. It depends on your dependencies.
+        // Some other common variations on notice and license file names
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+    }
+}
+
+repositories{
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile project(':zxingLibrary')
+    compile 'com.android.support:design:24.2.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //boomenu 菜单依赖
+    compile 'com.nightonke:boommenu:1.0.9'
+    compile name:'SMSSDK-3.0.0',ext:'aar'
+    compile name:'SMSSDKGUI-3.0.0',ext:'aar'
+
+    compile (project(':gallery')){
+        exclude module:"support-fragment"
+    }
+    compile 'com.yanzhenjie:permission:1.0.5'
+    compile project(':hotimglibrary')
+}

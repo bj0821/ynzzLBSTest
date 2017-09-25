@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bg_view"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="输入车牌号查询"
+            style="@style/black_16_normal"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25">
+
+            <TextView
+                android:id="@+id/province_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云"
+                android:textSize="@dimen/textsize_16"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="@dimen/margin_5"
+                android:drawableRight="@mipmap/icon_down_arrow"
+                android:background="@drawable/blue_btn_style"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/input_h"
+                android:text="查询"
+                style="@style/white_16_normal"
+                android:background="@drawable/login_btn_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <EditText
+                android:id="@+id/search_et"
+                style="@style/login_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_input_h"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_5"
+                android:background="@drawable/white_conner_bg_noborder"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/province_tv"
+                android:layout_toLeftOf="@id/search_btn"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_7"
+            android:text="(注意输入格式如下:A+五位车牌号码)"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/margin_10">
+
+        <LinearLayout
+            android:id="@+id/show_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/ispass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_nocar"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/ispass_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_16_normal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_10" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

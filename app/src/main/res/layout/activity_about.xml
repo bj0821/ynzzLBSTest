@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_about_toolbar"
+        layout="@layout/my_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_about_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        此软件是由云南中智物联网科技有限公司开发，在开发的过程中为了使用户得到更好的体验，我们纳入了以下开源的项目和Api，下面将列举出来,以此鸣谢。"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ListView
+            android:id="@+id/activity_about_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_horizontal_margin" />
+    </LinearLayout>
+
+</LinearLayout>

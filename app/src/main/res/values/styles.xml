@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="login_style">
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/tab_menu_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="black_16_normal">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+    <style name="black_17_normal">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textsize_17</item>
+    </style>
+
+    <style name="blue_16_normal">
+        <item name="android:textColor">@color/new_blue</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="blackglay_16_normal">
+        <item name="android:textColor">@color/black_gray</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="white_16_normal">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_16</item>
+    </style>
+
+    <style name="login_input">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray_light</item>
+        <item name="android:textColorHint">@color/login_light</item>
+    </style>
+
+    <!-- 导航条的页面主题 -->
+    <style name="abs_activity_theam" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/back_normal</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#03a9f4</item>
+    </style>
+
+    <style name="update_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+</resources>

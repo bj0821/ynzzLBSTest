@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#629ff5</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_topbar">#FCFCFC</color>
+    <color name="bg_gray">#00F1F1F1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="text_gray">#101010</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_yellow">#FFC800</color>
+    <color name="text_topbar">#694E42</color>
+    <color name="div_white">#E5E5E5</color>
+    <color name="scan_bg">#7f000000</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_c61a04">#c61a04</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_d81e06">#d81e06</color>
+    <color name="color_b0b8b2">#010513</color>
+    <color name="color_333333">#333333</color>
+    <color name="grey_dark">#37474F</color>
+
+    <drawable name="transparent">#00000000</drawable>
+    <!-- color -->
+    <color name="blue">#2e91d4</color>
+    <color name="blue_press">#1971ac</color>
+    <color name="half_transparent">#66000000</color>
+    <color name="white">#ffffff</color>
+    <color name="light_gray">#eef1f5</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="deep_gray">#777777</color>
+    <color name="black_gray">#4a4a4a</color>
+    <color name="black">#000000</color>
+    <!--新UI颜色 -->
+    <color name="new_blue">#1e82d2</color>
+    <color name="gray_light">#FFBBBBBB</color>
+    <!-- 登录 -->
+    <color name="btn_blue_normal">#29b6f6</color>
+    <color name="login_light">#bbbbbb</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="main_background1">#118EEA</color>
+    <color name="btn_background">#cccccc</color>
+    <color name="red">#FF0000</color>
+    <color name="red1">#CD5C5C</color>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_conner_bg_noborder"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+   <!-- <TextView
+        style="@style/black_16_normal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_15"
+        android:paddingTop="@dimen/margin_15"
+        android:singleLine="true"
+        android:text="停放区域" />-->
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/update1_title"
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:text="停放区域"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/split_line_h"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:divider="@color/light_gray"
+        android:dividerHeight="@dimen/split_line_h"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_7"
+    >
+
+    <TextView
+        android:id="@+id/item_status_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地面"
+        android:gravity="center"
+        style="@style/blackglay_16_normal"
+        />
+
+</LinearLayout>

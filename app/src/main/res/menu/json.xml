@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/json"
+        android:orderInCategory="100"
+        android:icon="@drawable/nav_friends"
+        android:title="@string/action_settings"
+        />
+    <item
+        android:id="@+id/sms"
+        android:orderInCategory="100"
+        android:title="SMS"
+        />
+    <item
+        android:id="@+id/Email"
+        android:orderInCategory="100"
+        android:title="Email"
+        />
+
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+    <include
+        android:id="@+id/activity_about_toolbar"
+        layout="@layout/my_toolbar" />
+    <RatingBar
+        android:id="@+id/rb_normal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edit_evaluate"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="    请做出评价"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#42ef70"
+        android:text="提交"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

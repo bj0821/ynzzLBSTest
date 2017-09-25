@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:id="@+id/bg_view"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.ynzz.carmanager.ui.view.ClearEditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_input_h"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_conner_bg_noborder"
+            android:drawableLeft="@drawable/icon_search"
+            android:hint="搜索"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_7"
+        >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_delete_normal"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="车辆名称"
+            android:gravity="center"
+            style="@style/black_16_normal"
+            />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="停放区域"
+            android:gravity="center"
+            style="@style/black_16_normal"
+            />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_edit_normal"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/car_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/split_line_h"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        />
+
+    <LinearLayout
+        android:id="@+id/nocontent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@mipmap/ic_tool_none" />
+
+        <TextView
+            android:id="@+id/nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_7"
+            android:text="暂无内容"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

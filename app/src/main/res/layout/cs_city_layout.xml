@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bg_view"
+    android:background="#80444444">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+    <GridView
+        android:id="@+id/pop_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/transparent"
+        android:verticalSpacing="@dimen/margin_2"
+        android:horizontalSpacing="@dimen/margin_2"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:numColumns="7" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_input_h"
+        android:text="取消"
+        style="@style/white_16_normal"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/blue_btn_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_15"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

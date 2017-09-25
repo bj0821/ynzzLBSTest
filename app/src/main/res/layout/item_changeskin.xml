@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+	<ImageView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/skin_item_image"
+	    android:layout_centerInParent="true"
+	    android:scaleType="centerCrop"/>
+	<ImageView android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/skin_item_ok"
+	    android:layout_centerInParent="true"
+	    android:src="@drawable/icon_ok"
+	    android:visibility="gone"
+	    android:scaleType="centerCrop"/>
+</RelativeLayout>

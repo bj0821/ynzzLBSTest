@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ynzz.lbstest">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.ynzz.carmanager.ui.consts.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ynzz01"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="MfMXveonMwodZq7fX2wWT0MGnYcBxl7t" />
+
+        <activity android:name=".lbsActivity" />
+        <activity android:name=".CameraAlbumActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ynzz.lbstest.cameraalbumactivity.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyLocation" />
+        <activity android:name=".driver" />
+        <activity android:name=".passenger" />
+        <activity android:name=".SensorDemo" />
+        <activity android:name=".OrientationSensor" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="20cb1fd4addb1" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="2dd9b493d589574ef06bf3853084e114" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Ratingbardemo" />
+        <activity android:name=".Scanobject2" />
+        <activity android:name=".WifiActivity" />
+        <activity android:name=".JsonActivity" />
+        <activity android:name=".SMSActivity" />
+        <activity android:name=".EmailActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".login.ContactActivity" />
+        <activity android:name=".login.StartRegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".login.ForgetPasswordActivity" />
+        <activity android:name=".NaviAboutActivity" />
+        <activity android:name=".login.ShareActivity" />
+        <activity android:name=".firstlogo.GuideActivity" />
+        <activity android:name=".Register.RegisterActivity" />
+        <activity android:name=".Register.TelActivity" />
+        <activity
+            android:name="com.ynzz.carmanager.ui.CarMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/abs_activity_theam" />
+        <activity
+            android:name="com.ynzz.carmanager.ui.QueryCarPassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/abs_activity_theam" />
+        <activity
+            android:name="com.ynzz.carmanager.ui.AddCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/abs_activity_theam" />
+        <activity
+            android:name="com.ynzz.carmanager.ui.CarListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/abs_activity_theam" />
+        <activity
+            android:name="com.ynzz.carmanager.ui.EditCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/abs_activity_theam" />
+        <activity android:name=".carmera.CarmeraMainActivity" />
+        <activity android:name=".HotImgActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:id="@+id/bg_view"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_7"
+        android:text="(注意输入格式如下:A+五位车牌号码)"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical"
+        android:background="@drawable/white_conner_bg_border"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_7"
+            android:paddingRight="@dimen/margin_7"
+            android:paddingTop="@dimen/margin_15"
+            android:paddingBottom="@dimen/margin_15"
+            >
+
+            <TextView
+                android:id="@+id/carNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车牌号码"
+                android:layout_marginLeft="@dimen/margin_5"
+                style="@style/black_16_normal"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+            <!--<TextView
+                android:id="@+id/carNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="苏"
+                android:textSize="@dimen/textsize_16"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/carNum"
+                android:layout_marginLeft="@dimen/margin_7"
+                android:layout_marginRight="@dimen/margin_7"
+                />-->
+
+            <TextView
+                android:id="@+id/carNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云"
+                android:textSize="@dimen/textsize_16"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="@dimen/margin_5"
+                android:drawableRight="@mipmap/icon_down_arrow"
+                android:background="@drawable/blue_btn_style"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/carNum"
+                android:layout_marginLeft="@dimen/margin_7"
+                android:layout_marginRight="@dimen/margin_7"
+                />
+
+            <EditText
+                android:id="@+id/car_et"
+                style="@style/login_input"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/white_conner_bg_noborder"
+                android:singleLine="true"
+                android:hint="请输入车牌号"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/black_gray"
+                android:textSize="@dimen/textsize_16"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/carNum1"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_h"
+            android:background="@color/light_gray"
+            ></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_7"
+            android:paddingRight="@dimen/margin_7"
+            android:paddingTop="@dimen/margin_15"
+            android:paddingBottom="@dimen/margin_15"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停放区域"
+                android:layout_marginLeft="@dimen/margin_5"
+                style="@style/black_16_normal"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/carpassType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地面"
+                style="@style/blackglay_16_normal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/ic_arrow"
+                android:drawablePadding="@dimen/margin_5"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_line_h"
+            android:background="@color/light_gray"
+            ></View>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_input_h"
+        android:text="确定"
+        style="@style/white_16_normal"
+        android:layout_marginTop="@dimen/margin_25"
+        android:background="@drawable/blue_btn_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginRight="@dimen/margin_25"
+        />
+
+
+</LinearLayout>

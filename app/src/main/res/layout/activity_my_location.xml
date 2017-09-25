@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                />
+        </android.support.design.widget.AppBarLayout>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setMapMode"
+                android:text="普通图" />
+
+            <RadioButton
+                android:id="@+id/statellite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="setMapMode"
+                android:text="卫星图" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/traffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:onClick="setTraffic"
+            android:text="路况图" />
+
+        <CheckBox
+            android:id="@+id/baiduHeatMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:onClick="setBaiduHeatMap"
+            android:text="百度城市热力图" />
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:enabled="true" />
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <RadioGroup
+            android:id="@+id/rg_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="#accbf4"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/button_0"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/ic_account_circle_white_24dp"
+                android:text="首页" />
+            <RadioButton
+                android:id="@+id/button_1"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_channel"
+                android:text="@string/tab_menu_alert" />
+
+            <RadioButton
+                android:id="@+id/button_2"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_message"
+                android:text="@string/tab_menu_profile" />
+
+            <RadioButton
+                android:id="@+id/badidu"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_better"
+                android:text="@string/tab_menu_pay" />
+
+            <RadioButton
+                android:id="@+id/message"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_setting"
+                android:text="@string/tab_menu_setting"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
+<android.support.design.widget.NavigationView
+android:id="@+id/nav_view"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+app:headerLayout="@layout/nav_header"
+app:menu="@menu/nav_menu" />
+
+    </android.support.v4.widget.DrawerLayout>
